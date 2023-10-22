@@ -1,0 +1,46 @@
+.navbar{
+    background-color: #f8f9fa;
+}
+
+.nav-container{
+    background-color: white;
+}
+
+.navbar form{
+    width: calc(100% - 16px - 50px - 50px);
+}
+
+.navbar input{
+    background-color: #e5e5e5;
+}
+
+.navbar i{
+    color: #5b5858;
+}
+.navbar .fa-question{
+    background-color: #5b5858;
+    border-radius: 50%;
+    color: white;
+    padding: 3px 5px;
+}
+.navbar .fa-bell{
+    color: #ff8f00;
+}
+
+.mobile-hidden{
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .mobile-hidden{
+        display: initial;
+    }
+    .mobile-show{
+        display: none;
+    }
+    
+    .navbar form{
+        width: calc(100% - 64px - 200px - 100px);
+    }
+}
+
