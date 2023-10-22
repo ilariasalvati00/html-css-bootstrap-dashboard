@@ -1,5 +1,5 @@
 :root {
-    --nav-height: 12vh;
+    --nav-height: 13vh;
   }
 
 .navbar{
@@ -46,7 +46,6 @@
 
 .main{
     height: calc(100vh - var(--nav-height));
-    background-color: green;
     overflow-y: scroll;
 }
 
@@ -55,6 +54,31 @@
     background-image: url(img/sidebar-bg.png);
     background-color: #051e34;
     color: white;
+}
+
+.header{
+    background-color: #1b72e8;
+    color: white;
+}
+
+.header .badge{
+    background-color: #165bba;
+}
+
+.bg-grey{
+    background-color: #e5e5e5;
+}
+
+#submit{
+    background-color: #0d6efd;
+    color: white;
+    width: 100px;
+}
+
+#cancel{
+    background-color: #ffc107;
+    color: white;
+    width: 100px;
 }
 
 @media screen and (min-width: 992px) {

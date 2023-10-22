@@ -68,8 +68,114 @@
                         </div>
                     </div>
                 </div>
-                <div class="main col-lg-11 col-md-11 col-11">
+                <div class="main col-lg-11 col-md-11 col-11 px-0">
+                    <div class="header container-fluid py-2">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="container-fluid d-flex align-items-baseline">
+                                    <h2>Boolean</h2>
+                                    <span class="badge rounded-pill ms-1">Piano blaze</span>
+                                </div>
+                                <div>
+                                    <span class="badge rounded-pill">3 app</span>
+                                    <span>&#12299</span>
+                                    <span class="badge rounded-pill">Boolean mobile app</span>
+                                    <span class="badge rounded-pill">Boolean web app</span>
+                                    <span class="badge rounded-pill">Boolean blog app</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-flex flex-column">
+                                <span>Studenti online negli ultimi 30 minuti</span>
+                                <span>125</span>
+                            </div>
+                            <div class="col-lg-2">
+                                <span>Nuovo Studente</span>
+                                <button class="btn border border-white text-white fs-5 px-2 py-1 ms-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#nuovostudente" aria-controls="nuovostudente">+</button>
 
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="nuovostudente" aria-labelledby="nuovostudenteLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="nuovostudenteLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="nome" class="form-label">Nome</label>  
+                                                <input type="text" class="form-control" id="nome" aria-label="nome">
+                                            </div>
+                                            <div class="col">
+                                                <label for="cognome" class="form-label">Cognome</label>  
+                                                <input type="text" class="form-control" id="cognome" aria-label="cognome">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="email" class="form-label">Email</label>  
+                                                <div class="input-group">
+                                                    <span class="input-group-text bg-grey" id="basic-addon1">@</span>
+                                                    <input type="email" class="form-control" id="email" aria-label="email">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <label for="password" class="form-label">Password</label>  
+                                                <input type="password" class="form-control" id="password" aria-label="cognome">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="indirizzo" class="form-label">Indirizzo</label>  
+                                                <input type="text" class="form-control" id="indirizzo" aria-label="indirizzo">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label for="citta" class="form-label">Città</label>  
+                                                <input type="text" class="form-control" id="citta" aria-label="citta">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="stato" class="form-label">Stato</label>  
+                                                <select class="form-select" id="stato" aria-label="Default select example">
+                                                    <option selected>Scegli...</option>
+                                                    <option value="1">Italia</option>
+                                                    <option value="2">Spagna</option>
+                                                    <option value="3">Germania</option>
+                                                  </select>
+                                            </div>
+                                            <div class="col-2">
+                                                <label for="cap" class="form-label">CAP</label>  
+                                                <input type="number" class="form-control" id="cap" aria-label="cognome">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="foto" class="form-label">Foto</label>  
+                                                <div class="input-group">
+                                                    <button class="btn bg-grey" type="button" id="button-addon1">Scegli file</button>
+                                                    <input type="text" class="form-control" id="foto" placeholder="Nessun file selezionato" aria-label="email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col">
+                                                <button class="btn d-inline me-1" type="button" id="submit">Salva</button>
+                                                <button class="btn d-inline me-1" type="button" id="cancel">Svuota</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
