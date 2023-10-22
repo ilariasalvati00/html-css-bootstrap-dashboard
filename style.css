@@ -1,6 +1,11 @@
-    .navbar{
+:root {
+    --nav-height: 12vh;
+  }
+
+.navbar{
     background-color: #f8f9fa;
-    height: 10vh;
+    height: var(--nav-height);
+    width: 100vw;
 }
 
 .nav-container{
@@ -34,14 +39,19 @@
     display: none;
 }
 
+.body{
+    width: 100vw;
+    height: calc(100vh - var(--nav-height));
+}
+
 .main{
-    height: 90vh;
+    height: calc(100vh - var(--nav-height));
     background-color: green;
     overflow-y: scroll;
 }
 
 .sidebar{
-    height: 90vh;
+    height: calc(100vh - var(--nav-height));
     background-image: url(img/sidebar-bg.png);
     background-color: #051e34;
     color: white;
