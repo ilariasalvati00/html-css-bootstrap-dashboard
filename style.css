@@ -58,6 +58,11 @@
     color: white;
 }
 
+.sidebar .row:hover{
+    background-color: #e5e5e5;
+    color: white;
+}
+
 .header{
     background-color: #1b72e8;
     color: white;
