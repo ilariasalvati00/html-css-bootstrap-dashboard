@@ -12,20 +12,27 @@
     <div class="container-fluid d-flex flex-wrap p-0">
         <nav class="navbar">
             <div class="container-fluid nav-container">
-            <a class="navbar-brand" href="#">
-                <img class="mobile-hidden" src="img/logo.svg" alt="Boolean" width="200" height="35">
-                <img class="mobile-show" src="img/mobile-logo.png" alt="Boolean" width="35" height="35">
-            </a>
-            <form class="d-flex" role="search">
-                <div class="search p-2">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <span>Prova a cercare: Lezioni di Laravel</span>
+                <a class="navbar-brand" href="#">
+                    <img class="mobile-hidden" src="img/logo.svg" alt="Boolean" width="200" height="35">
+                    <img class="mobile-show" src="img/mobile-logo.png" alt="Boolean" width="35" height="35">
+                </a>
+                <form class="d-flex" role="search">
+                    <div class="search p-2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Prova a cercare: Lezioni di Laravel</span>
+                    </div>
+                </form>
+                <i class="fa-solid fa-list mobile-hidden"></i>
+                <i class="fa-solid fa-question mobile-hidden"></i>
+                <i class="fa-solid fa-ellipsis-vertical mobile-hidden"></i>
+                <div class="dropdown">
+                    <a class="btn btn-link m-0 p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell btn"></i></button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
                 </div>
-            </form>
-            <i class="fa-solid fa-list mobile-hidden"></i>
-            <i class="fa-solid fa-question mobile-hidden"></i>
-            <i class="fa-solid fa-ellipsis-vertical mobile-hidden"></i>
-            <i class="fa-solid fa-bell"></i>
             </div>
         </nav>
         <div class="container-fluid body">
@@ -176,8 +183,238 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row p-2">
+                        <div class="col-lg-8 col-12">
+                           <div class="container classi border border-secondary-subtle rounded px-0 m-2">
+                                <h2 class="border-bottom border-secondary-subtle p-2">Prossime classi</h2>
+                                <div class="container mx-1">
+                                    <table class="table text-center">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">Data Inizio</th>
+                                                <th scope="col">ROI</th>
+                                                <th scope="col">Stato</th>
+                                                <th scope="col">Azioni</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <i class="fa-solid fa-code"></i>
+                                                    <span>Classe 75</span>
+                                                </td>
+                                                <td>15 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#edit" aria-controls="edit"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#delete" aria-controls="delete"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fa-solid fa-code"></i>
+                                                    <span>Classe 76</span>
+                                                </td>
+                                                <td>16 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#edit" aria-controls="edit"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#delete" aria-controls="delete"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fa-solid fa-code"></i>
+                                                    <span>Classe 77</span>
+                                                </td>
+                                                <td>17 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-warning text-light">process</span>
+                                                </td>
+                                                <td>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#edit" aria-controls="edit"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#delete" aria-controls="delete"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fa-solid fa-code"></i>
+                                                    <span>Classe 78</span>
+                                                </td>
+                                                <td>18 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#edit" aria-controls="edit"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#delete" aria-controls="delete"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fa-solid fa-code"></i>
+                                                    <span>Classe 79</span>
+                                                </td>
+                                                <td>19 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-danger">failed</span>
+                                                </td>
+                                                <td>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#edit" aria-controls="edit"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#delete" aria-controls="delete"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fa-solid fa-code"></i>
+                                                    <span>Classe 80</span>
+                                                </td>
+                                                <td>20 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#edit" aria-controls="edit"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#delete" aria-controls="delete"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fa-solid fa-code"></i>
+                                                    <span>Classe 81</span>
+                                                </td>
+                                                <td>21 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-danger">failed</span>
+                                                </td>
+                                                <td>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#edit" aria-controls="edit"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#delete" aria-controls="delete"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fa-solid fa-code"></i>
+                                                    <span>Classe 82</span>
+                                                </td>
+                                                <td>22 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#edit" aria-controls="edit"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button class="btn action fs-5 px-2 py-1 ms-1" type="button" data-bs-target="#delete" aria-controls="delete"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                           </div>
+                           <div class="container faq border border-secondary-subtle rounded px-0 m-2">  
+                                <h2 class="border-bottom border-secondary-subtle p-2">FAQ</h2>
+                                <div class="container mx-1">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Come aggiungere un nuovo studente?
+                                            </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                Come posso accedere alle informazioni del mio account?
+                                            </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                Posso usare questa dashboard da mobile? 
+                                            </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="container todo border border-secondary-subtle rounded px-0 mt-2">
+                                <h2 class="border-bottom border-secondary-subtle p-2">Todo</h2>
+                                <div class="container-fluid">
+                                    <ul class="list-group mb-2">
+                                        <li class="list-group-item form-check">
+                                            <input class="form-check-input mx-1" type="checkbox" value="" id="check-1">
+                                            <label class="form-check-label" for="check-1">
+                                            Kickoff nuove classi
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item form-check">
+                                            <input class="form-check-input mx-1" type="checkbox" value="" id="check-2">
+                                            <label class="form-check-label" for="check-2">
+                                                Lezione su Bootstrap 5 in classe #75
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item form-check">
+                                            <input class="form-check-input mx-1" type="checkbox" value="" id="check-3">
+                                            <label class="form-check-label" for="check-3">
+                                                Controllare username github studenti
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="container utenti my-2 p-2 border border-secondary-subtle rounded">
+                                <ul class="list-group ">
+                                    <li class="list-group-item">
+                                        <img class="img-fluid" src="img/stats.jpeg" alt="">
+                                        <h3>Utenti attivi</h3>
+                                        <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Gennaio: 1200
+                                    </li>
+                                    <li class="list-group-item">
+                                        Febbraio: 800
+                                    </li>
+                                    <li class="list-group-item">
+                                        Marzo: 1500
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="">Visualizza report approfondito</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+           
         </div>
     </div>
 

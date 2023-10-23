@@ -2,6 +2,8 @@
     --nav-height: 13vh;
   }
 
+
+
 .navbar{
     background-color: #f8f9fa;
     height: var(--nav-height);
@@ -79,6 +81,26 @@
     background-color: #ffc107;
     color: white;
     width: 100px;
+}
+
+.classi h2, .faq h2{
+    background-color: #e5e5e5;
+}
+.todo h2{
+    background-color: #e5e5e5;
+}
+
+.action{
+    border: 1px solid #5b5858;
+    border-radius: 5px;
+    color: #5b5858;
+}
+
+.fa-code{
+    background-color: #f26551;
+    border-radius: 50%;
+    padding: 5px 5px;
+    color: white;
 }
 
 @media screen and (min-width: 992px) {
